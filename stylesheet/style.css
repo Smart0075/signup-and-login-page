@@ -4,6 +4,8 @@ body{
     align-items: center;
    justify-content: center;
    background: linear-gradient(black);
+   overflow-x: hidden;
+   overflow-wrap: break-word;
  
 }
  .header h1{
@@ -49,7 +51,7 @@ padding: 5px;
     border: 1px solid (white);
     box-shadow: 1px 5px 8px;
     border-radius: 10px;
-   width: 250px;
+   width: 100%;
    background: white;
    -webkit-backdrop-filter: brightness(20px);
    backdrop-filter: blur(15px);
@@ -57,7 +59,7 @@ padding: 5px;
 }
 .wrapper{ 
   margin: auto;
-    max-width: 200px;
+    max-width: 50%;
 }
 
 label{
