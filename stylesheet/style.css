@@ -1,0 +1,95 @@
+body{
+  display: flex;
+ text-align: center;
+    align-items: center;
+   justify-content: center;
+   background: linear-gradient(black);
+ 
+}
+ .header h1{
+  font-size: medium;
+  font-weight: light;
+}
+.header p{
+  font-size: smaller;
+  font-weight: light;
+  font-style: oblique;
+}
+.icon{
+  border-radius: 350%;
+    max-width: 20px;
+    margin: auto ;
+    padding: 4%;
+    color: blue;
+     box-shadow: 0% 1% 1%;
+     border: 1px  solid; 
+}
+
+.input-field{
+  position: relative;
+}
+.input-field input{
+  padding-left: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.input-field i{
+  position: absolute;
+  left:20px;
+  font-size: smaller;
+  border-radius: 350%;
+   color: blu;
+   box-shadow: 0% 1% 1%;
+padding: 5px;
+}
+
+.container{
+    border: 1px solid (white);
+    box-shadow: 1px 5px 8px;
+    border-radius: 10px;
+   width: 250px;
+   background: white;
+   -webkit-backdrop-filter: brightness(20px);
+   backdrop-filter: blur(15px);
+ 
+}
+.wrapper{ 
+  margin: auto;
+    max-width: 200px;
+}
+
+label{
+  font-size: small;
+  font-weight: lighter;
+  text-shadow: 17%;
+  display: flex;
+}
+
+ .Gender{
+  position: absolute;
+ display: flex; gap: 2px;
+ }
+
+ 
+.check #checkbox{
+  position: absolute ;
+  display: flex;
+  right: 50%;
+ 
+}
+.check label{
+display: flex;
+position: absolute;
+ left: 5%;
+  padding: 2px;
+}
+.signupBTN{
+  width: 100%;
+  color:white;
+  background:blue;
+  cursor: pointer;
+  border-radius: 30px;
+   
+}
