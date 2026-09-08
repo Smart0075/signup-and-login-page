@@ -1,73 +1,142 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/style.css">
-     <script src="https://kit.fontawesome.com/cc08ab8254.js" crossorigin="anonymous"></script>
-    <title>signup</title>
+    <script src="https://kit.fontawesome.com/cc08ab8254.js"
+        crossorigin="anonymous"></script>
+    <title>Sign Up</title>
 </head>
 <body>
-   
-        <div class="container">
-         <div class="wrapper"> 
-                <div class="icon"> 
-                 <i class="fa fa-user"></i>
-                 </div>
+    <form>
+    <div class="container">
+        <div class="wrapper">
+            <!-- USER ICON -->
+            <div class="icon">
+                <i class="fa fa-user"></i>
+            </div>
+            <!-- HEADER -->
+            <header class="header">
+                <h1>CREATE ACCOUNT.</h1>
+                <p>
+                    Join us today! Fill in the details correctly to get started!
+                </p>
+            </header>
+            <!-- FIRST NAME -->
+            <label for="firstName">FIRST NAME</label>
+            <div class="input-field">
+                <input
+                    type="text"
+                    id="firstName"
+                    placeholder="Enter first name"
+                >
+                <i class="fa fa-user"></i>
+            </div>
+            <!-- MIDDLE NAME -->
+            <label for="middleName">MIDDLE NAME</label>
+            <div class="input-field">
+                <input
+                    type="text"
+                    id="middleName"
+                    placeholder="Enter middle name"
+                >
+                <i class="fa fa-user"></i>
+            </div>
+            <!-- OTHER NAME -->
+            <label for="otherName">OTHER NAME</label>
+            <div class="input-field">
+                <input
+                    type="text"
+                    id="otherName"
+                    placeholder="Enter other name"
+                >
+                <i class="fa fa-user"></i>
+            </div>
+            <!-- EMAIL -->
+            <label for="email">EMAIL ADDRESS</label>
+            <div class="input-field">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter email address"
+                >
+                <i class="fa fa-envelope"></i>
+            </div>
+            <!-- PASSWORD -->
+            <label for="password">PASSWORD</label>
+            <div class="input-field">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                >
+                <i class="fa fa-lock"></i>
+            </div>
+            <!-- CONFIRM PASSWORD -->
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <div class="input-field">
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm password"
+                >
+                <i class="fa fa-lock"></i>
+            </div>
+            <!-- LINE -->
+            <hr>
+            <!-- GENDER -->
+            <div class="gender">
+                <span>Gender:</span>
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                    >
+                    Male
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                    >
+                    Female
+                </label>
+            </div>
+            <!-- MESSAGE -->
+            <p id="message"></p>
+            <!-- TERMS AND CONDITIONS -->
+            <div class="check">
+                <input
+                    type="checkbox"
+                    id="checkbox"
+                >
+                <label for="checkbox">
+                    By signing up, you agree to our
+                    <a href="T&C.html">T&C.</a>
+                </label>
+            </div>
 
-                 <header class="header">
-                  <h1>CREATE ACCOUNT.</h1>
-            <p>Join us today!.Fill in the details correctly to get stared!.</p>
-                    </header>
-
-                 <label>FIRST Name</label>
-                 <div class="input-field">
-      <input type="text" id="firstName" placeholder="Enter first name">
-      <i class="fa fa-user"></i>
-
-         <label>Middle Name</label>
-       <input type="text" id="middleName" placeholder= "Enter middle name">
-        <i class="fa fa-user"></i>
-
-        <label>Other name</label>
-        <input type="text" id="otherName" placeholder="Enter other name">
-        <i class="fa fa-user"></i>
-
-        <label>Email Address</label>
-            <input type="text" id="Email" placeholder="Enter email address">
-             <i class="fa fa-envelope"></i>
-
-            <label>Password</label>
-            <input type="password" id="password" placeholder="Enter password">
-             <i class="fa fa-lock"></i>
-
-            <label>Confirm Password</label>
-            <input type="password" id="confirmPassword" placeholder="Enter confirm password">
-               <i class="fa fa-lock"></i>
-               <!-- GENDER -->
-                 <div class="Gender"> 
-            <label>Gender:</label>
-              <input type="checkbox">
-              <label>Male</label>
-              <label>Female</label>
-              <input type="checkbox">
-              </div>
-
-       <p id="message"></p>
-           
-       <!-- CHECK BOX -->
-          <div class="check"> 
-          <input type="checkbox" id="checkbox"> 
-            <label> By signup you agreed to our <a href="T&C.html">T&C?.</a></label> 
-          </div>
-         <br>
-        <button class="signupBTN" id="signup">Summit</button>
-       <br>
-
-         
-          <!-- ALREADY HAVE AN ACCOUNT -->
-           <p>Already have an account? <a href="login.html">Login</a></p>
+            <!-- SIGN UP BUTTON -->
+            <button
+                class="signupBTN"
+                id="signup"
+                type="button"
+            >
+                Sign Up
+            </button>
+            <!-- LOGIN -->
+            <p class="login-text">
+                Already have an account?
+                <a href="login.html">
+                    Login
+                </a>
+            </p>
         </div>
-           </div> 
-          
+    </div>
+    </form>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
