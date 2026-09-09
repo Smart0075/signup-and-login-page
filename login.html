@@ -1,0 +1,48 @@
+
+   if(!firstNameInput ){
+    message.textContent = "First name required";
+    message.style.color = "red"
+     return;
+   }else{
+    message.textContent = ""
+   }
+
+   if(!middleNameInput){
+    middleMessage.textContent = "Middle name required"
+    middleMessage.style.color = " red"
+    return;
+   }else{
+    middleMessage.textContent = ""
+   }
+
+  if(!otherNameInput){
+  otherNameMessage.textContent = "Other name required"
+  otherNameMessage.style.color = "red"
+  return;
+  }else{
+    otherNameMessage.textContent = ""
+  }
+
+   if(!emailInput){
+    emailMessage.textContent = "Email required"
+    emailMessage.style.color = ' red'
+    return;
+   }else{
+    emailMessage.textContent = ""
+   }
+
+   if(!value){
+    passwordMessge.textContent = "Password required"
+    passwordMessge.style.color = "red"
+    return;
+   }else{
+    passwordMessge.textContent = ""
+   };
+
+   if(value.length ===0){
+    passwordMessge.textContent = ""
+    passwordMessgeBar.style.color = ""
+    passwordMessgeBar.style.width = "";
+   } 
+  })
+

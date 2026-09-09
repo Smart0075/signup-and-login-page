@@ -9,7 +9,7 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <form>
+    <form id="Singup">
     <div class="container">
         <div class="wrapper">
             <!-- USER ICON -->
@@ -32,6 +32,7 @@
                     placeholder="Enter first name"
                 >
                 <i class="fa fa-user"></i>
+                  <p id="message"></p>
             </div>
             <!-- MIDDLE NAME -->
             <label for="middleName">MIDDLE NAME</label>
@@ -42,6 +43,7 @@
                     placeholder="Enter middle name"
                 >
                 <i class="fa fa-user"></i>
+                  <p id="middleMessage"></p>
             </div>
             <!-- OTHER NAME -->
             <label for="otherName">OTHER NAME</label>
@@ -52,6 +54,7 @@
                     placeholder="Enter other name"
                 >
                 <i class="fa fa-user"></i>
+                <p id="otherNameMessage"></p>
             </div>
             <!-- EMAIL -->
             <label for="email">EMAIL ADDRESS</label>
@@ -62,6 +65,7 @@
                     placeholder="Enter email address"
                 >
                 <i class="fa fa-envelope"></i>
+                <p id="emailMessage"></p>
             </div>
             <!-- PASSWORD -->
             <label for="password">PASSWORD</label>
@@ -72,6 +76,10 @@
                     placeholder="Enter password"
                 >
                 <i class="fa fa-lock"></i>
+               <p id="passwordMessge"></p>
+                <div class="passwordMessgestrenth"> 
+                    <p id="passwordMessgeBar"></p>
+                </div>
             </div>
             <!-- CONFIRM PASSWORD -->
             <label for="confirmPassword">CONFIRM PASSWORD</label>
@@ -106,7 +114,7 @@
                 </label>
             </div>
             <!-- MESSAGE -->
-            <p id="message"></p>
+          
             <!-- TERMS AND CONDITIONS -->
             <div class="check">
                 <input

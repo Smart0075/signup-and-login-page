@@ -147,10 +147,11 @@ hr {
 /* =========================
    MESSAGE
 ========================= */
-#message {
+#message,#middleMessage,#otherNameMessage,#emailMessage,#passwordMessge{
     margin: 3px 0;
     font-size: 10px;
     text-align: center;
+    font-weight: lighter;
 }
 /* =========================
    TERMS
@@ -222,4 +223,22 @@ a:hover {
     .input-field input {
         height: 34px;
     }
+}
+
+
+.passwordMessgestrenth{
+      width: 210px;
+   height: 4px;
+   border-radius: 15px;
+   overflow: hidden;
+   font-size: x-small;
+}
+
+#passwordMessgeBar{
+  width: 0%;
+   height: 100%;
+   transition: width 0.1s ease;
+   font-size: x-small;
+   
+
 }
