@@ -1,131 +1,202 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="stylesheet/style.css">
+
     <script src="https://kit.fontawesome.com/cc08ab8254.js"
         crossorigin="anonymous"></script>
+
     <title>Sign Up</title>
 </head>
+
 <body>
+
     <form id="Singup">
-    <div class="container">
-        <div class="wrapper">
-            <!-- USER ICON -->
-            <div class="icon">
-                <i class="fa fa-user"></i>
-            </div>
-            <!-- HEADER -->
-            <header class="header">
-                <h1>CREATE ACCOUNT.</h1>
-                <p>
-                    Join us today! Fill in the details correctly to get started!
-                </p>
-            </header>
-            <!-- FIRST NAME -->
-            <label for="firstName">FIRST NAME</label>
-            <div class="input-field">
-                <input
-                    type="text"
-                    id="firstName"
-                    placeholder="Enter first name"
-                >
-                <i class="fa fa-user"></i>
-                  <p id="message"></p>
-            </div>
-            <!-- MIDDLE NAME -->
-            <label for="middleName">MIDDLE NAME</label>
-            <div class="input-field">
-                <input
-                    type="text"
-                    id="middleName"
-                    placeholder="Enter middle name"
-                >
-                <i class="fa fa-user"></i>
-                  <p id="middleMessage"></p>
-            </div>
-            <!-- OTHER NAME -->
-            <label for="otherName">OTHER NAME</label>
-            <div class="input-field">
-                <input
-                    type="text"
-                    id="otherName"
-                    placeholder="Enter other name"
-                >
-                <i class="fa fa-user"></i>
-                <p id="otherNameMessage"></p>
-            </div>
-            <!-- EMAIL -->
-            <label for="email">EMAIL ADDRESS</label>
-            <div class="input-field">
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter email address"
-                >
-                <i class="fa fa-envelope"></i>
-                <p id="emailMessage"></p>
-            </div>
-            <!-- PASSWORD -->
-            <label for="password">PASSWORD</label>
-            <div class="input-field">
-                <input
-                    type="password"
-                    id="password"
-                    placeholder="Enter password"
-                >
-                <i class="fa fa-lock"></i>
-               <p id="passwordMessge"></p>
-                <div class="passwordMessgestrenth"> 
-                    <p id="passwordMessgeBar"></p>
+
+        <div class="container">
+
+            <div class="wrapper">
+
+                <!-- USER ICON -->
+                <div class="icon">
+                    <i class="fa fa-user"></i>
                 </div>
+
+                <!-- HEADER -->
+                <header class="header">
+                    <h1>CREATE ACCOUNT.</h1>
+                    <p>
+                        Join us today! Fill in the details correctly to get started!
+                    </p>
+                </header>
+
+                <!-- FIRST NAME -->
+                <label for="firstName">FIRST NAME</label>
+
+                <div class="input-field">
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="Enter first name"
+                    >
+
+                    <i class="fa fa-user"></i>
+
+                    <p id="message"></p>
+                </div>
+
+
+                <!-- MIDDLE NAME -->
+                <label for="middleName">MIDDLE NAME</label>
+
+                <div class="input-field">
+                    <input
+                        type="text"
+                        id="middleName"
+                        placeholder="Enter middle name"
+                    >
+
+                    <i class="fa fa-user"></i>
+
+                    <p id="middleMessage"></p>
+                </div>
+
+
+                <!-- OTHER NAME -->
+                <label for="otherName">OTHER NAME</label>
+
+                <div class="input-field">
+                    <input
+                        type="text"
+                        id="otherName"
+                        placeholder="Enter other name"
+                    >
+
+                    <i class="fa fa-user"></i>
+
+                    <p id="otherNameMessage"></p>
+                </div>
+
+
+                <!-- EMAIL -->
+                <label for="email">EMAIL ADDRESS</label>
+
+                <div class="input-field">
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter email address"
+                    >
+
+                    <i class="fa fa-envelope"></i>
+
+                    <p id="emailMessage"></p>
+                </div>
+
+
+                <!-- PASSWORD -->
+                <label for="password">PASSWORD</label>
+
+                <div class="input-field">
+
+                    <input
+                        type="password"
+                        id="password"
+                        minlength="5"
+                        maxlength="20"
+                        placeholder="Enter password"
+                    >
+
+                    <i class="fa fa-lock"></i>
+
+                    <p id="passwordMessge"></p>
+
+                    <div class="passwordMessgestrenth">
+                        <div id="passwordMessgeBar"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- CONFIRM PASSWORD -->
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+
+                <div class="input-field">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm password"
+                    >
+
+                    <i class="fa fa-lock"></i>
+
+                    <p id="confirmpasswordMessge"></p>
+
+                    <div class="confirmpasswordMessgestrenth">
+                        <div id="confirmpasswordMessgeBar"></div>
+                    </div>
+
+                </div>
+
             </div>
-            <!-- CONFIRM PASSWORD -->
-            <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <div class="input-field">
-                <input
-                    type="password"
-                    id="confirmPassword"
-                    placeholder="Confirm password"
-                >
-                <i class="fa fa-lock"></i>
-            </div>
+
+
             <!-- LINE -->
             <hr>
+
+
             <!-- GENDER -->
             <div class="gender">
+
                 <span>Gender:</span>
+
                 <label>
                     <input
                         type="radio"
                         name="gender"
                         value="male"
+                        id="male"
                     >
                     Male
                 </label>
+
                 <label>
                     <input
                         type="radio"
                         name="gender"
                         value="female"
+                        id="female"
                     >
                     Female
                 </label>
+
             </div>
-            <!-- MESSAGE -->
-          
+
+            <p id="genderMessage"></p>
+
+
             <!-- TERMS AND CONDITIONS -->
             <div class="check">
+
                 <input
                     type="checkbox"
                     id="checkbox"
                 >
+
                 <label for="checkbox">
                     By signing up, you agree to our
                     <a href="T&C.html">T&C.</a>
                 </label>
+
             </div>
+
+            <p id="checkMessage"></p>
+
 
             <!-- SIGN UP BUTTON -->
             <button
@@ -135,16 +206,20 @@
             >
                 Sign Up
             </button>
+
+
             <!-- LOGIN -->
             <p class="login-text">
                 Already have an account?
-                <a href="login.html">
-                    Login
-                </a>
+                <a href="login.html">Login</a>
             </p>
+
         </div>
-    </div>
+
     </form>
+
+
     <script src="javascript/script.js"></script>
+
 </body>
 </html>

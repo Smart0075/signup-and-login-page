@@ -1,126 +1,266 @@
+
 /* =========================
    RESET
 ========================= */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+
 /* =========================
    BODY
 ========================= */
 body {
-    margin: 0;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 20px;
+
     font-family: Arial, sans-serif;
-    background: whitesmoke;
+
+    background:
+        radial-gradient(circle at top left, rgba(0, 102, 255, 0.12), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(120, 80, 255, 0.12), transparent 35%),
+        #f4f7fb;
+
     overflow-x: hidden;
-    min-height: 100vh;
-    
 }
+
+
 /* =========================
    SIGNUP CARD
 ========================= */
 .container {
     width: 100%;
-    max-width: 320px;
-    padding: 10px 8px;
-    background: white;
-    border: 1px solid #e5e5e5;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    max-width: 390px;
+
+    padding: 22px 22px 18px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.10);
+
+    backdrop-filter: blur(8px);
 }
+
+
 /* =========================
    WRAPPER
 ========================= */
 .wrapper {
     width: 100%;
-     
 }
+
+
 /* =========================
    USER ICON
 ========================= */
 .icon {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
+
     margin: 0 auto 8px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    color: blue;
-    border: 1px solid blue;
+
+    color: #145eff;
+
+    border: 2px solid #145eff;
     border-radius: 50%;
-    font-size: 14px;
+
+    font-size: 15px;
 }
+
+
 /* =========================
    HEADER
 ========================= */
 .header {
     text-align: center;
+    margin-bottom: 12px;
 }
+
 .header h1 {
-    margin: 0 0 5px;
-    font-size: 17px;
-    font-weight: 600;
+    margin-bottom: 4px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
 }
+
 .header p {
-    margin: 0 0 15px;
-    font-size: 10px;
+    margin: 0;
+
+    font-size: 11px;
     line-height: 1.4;
-    color: #666;
+
+    color: #6b7280;
 }
+
+
 /* =========================
    LABEL
 ========================= */
 label {
     display: block;
+
     margin-bottom: 4px;
+
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
+
+    color: #374151;
 }
+
+
 /* =========================
    INPUT FIELD
 ========================= */
 .input-field {
     position: relative;
+
     width: 100%;
-    margin-bottom: 9px;
+
+    margin-bottom: 7px;
 }
+
+
 /* =========================
    INPUT
 ========================= */
 .input-field input {
     width: 100%;
-    height: 35px;
-    padding: 7px 10px 7px 32px;
-    border: 1px solid #d5d5d5;
-    border-radius: 6px;
+    height: 34px;
+
+    padding: 7px 10px 7px 34px;
+
+    border: 1px solid #d8dee8;
+    border-radius: 7px;
+
     outline: none;
+
     font-size: 11px;
-    background: white;
+
+    background: #ffffff;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
+
 .input-field input:focus {
-    border-color: blue;
+    border-color: #145eff;
+
+    box-shadow: 0 0 0 3px rgba(20, 94, 255, 0.08);
 }
+
+
 /* =========================
    INPUT ICON
 ========================= */
 .input-field i {
     position: absolute;
-    left: 10px;
-    top: 50%;
+
+    left: 11px;
+    top: 17px;
+
     transform: translateY(-50%);
-    color: blue;
+
+    color: #145eff;
+
     font-size: 11px;
+
+    z-index: 1;
 }
+
+
+/* =========================
+   MESSAGE
+========================= */
+#message,
+#middleMessage,
+#otherNameMessage,
+#emailMessage,
+#passwordMessge,
+#confirmpasswordMessge,
+#genderMessage,
+#checkMessage {
+    margin: 2px 0 0;
+
+    min-height: 12px;
+
+    font-size: 9px;
+
+    text-align: center;
+
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* =========================
+   PASSWORD STRENGTH
+========================= */
+.passwordMessgestrenth,
+.confirmpasswordMessgestrenth {
+    width: 100%;
+    height: 4px;
+
+    margin-top: 3px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #edf1f6;
+}
+
+
+/* =========================
+   PASSWORD BAR
+========================= */
+#passwordMessgeBar {
+    width: 0%;
+    height: 100%;
+
+    transition: width 0.2s ease;
+}
+
+
+/* =========================
+   CONFIRM PASSWORD BAR
+========================= */
+#confirmpasswordMessgeBar {
+    width: 0%;
+    height: 100%;
+
+    transition: width 0.2s ease;
+}
+
+
 /* =========================
    HR
 ========================= */
 hr {
-    margin: 12px 0;
+    margin: 9px 0;
+
     border: 0;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e7eb;
 }
+
+
 /* =========================
    GENDER
 ========================= */
@@ -128,31 +268,31 @@ hr {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
+
+    margin-bottom: 2px;
 }
+
 .gender span {
     font-size: 10px;
     font-weight: 600;
 }
+
 .gender label {
     display: flex;
     align-items: center;
     gap: 3px;
+
     margin: 0;
+
     font-size: 10px;
+    font-weight: 400;
 }
+
 .gender input {
     margin: 0;
 }
-/* =========================
-   MESSAGE
-========================= */
-#message,#middleMessage,#otherNameMessage,#emailMessage,#passwordMessge{
-    margin: 3px 0;
-    font-size: 10px;
-    text-align: center;
-    font-weight: lighter;
-}
+
+
 /* =========================
    TERMS
 ========================= */
@@ -160,85 +300,152 @@ hr {
     display: flex;
     align-items: flex-start;
     gap: 5px;
-    margin: 8px 0;
+
+    margin: 6px 0 4px;
 }
+
 .check input {
     margin-top: 2px;
+
     flex-shrink: 0;
 }
+
 .check label {
     margin: 0;
+
     font-size: 9px;
-    line-height: 1.4;
+    line-height: 1.35;
+
+    font-weight: 400;
 }
+
+
 /* =========================
    LINKS
 ========================= */
 a {
-    color: blue;
+    color: #145eff;
+
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+
 /* =========================
    SIGN UP BUTTON
 ========================= */
 .signupBTN {
     width: 100%;
     height: 36px;
+
+    margin-top: 3px;
+
     border: none;
     border-radius: 20px;
-    background: blue;
+
+    background: #145eff;
     color: white;
+
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 600;
+
     cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
 }
+
 .signupBTN:hover {
-    opacity: 0.9;
+    opacity: 0.92;
 }
+
+.signupBTN:active {
+    transform: scale(0.98);
+}
+
+
 /* =========================
    LOGIN
 ========================= */
 .login-text {
-    margin: 9px 0 0;
+    margin: 7px 0 0;
+
     text-align: center;
+
     font-size: 10px;
+
+    color: #6b7280;
 }
+
+
 /* =========================
    SMALL PHONES
 ========================= */
-@media (max-width: 350px) {
+@media (max-width: 420px) {
+
+    body {
+        padding: 12px;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 18px 15px 16px;
+        border-radius: 15px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .header p {
+        font-size: 10px;
+    }
+
+    .input-field input {
+        height: 35px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+@media (max-width: 330px) {
+
     body {
         padding: 8px;
     }
+
     .container {
-        max-width: 100%;
-        padding: 18px 10px;
+        padding: 15px 11px 14px;
     }
+
     .header h1 {
-        font-size: 16px;
+        font-size: 17px;
     }
-    .input-field input {
-        height: 34px;
+
+    .gender {
+        gap: 7px;
+    }
+
+    .check label {
+        font-size: 8.5px;
     }
 }
 
 
-.passwordMessgestrenth{
-      width: 210px;
-   height: 4px;
-   border-radius: 15px;
-   overflow: hidden;
-   font-size: x-small;
+/* =========================
+   TALL SCREENS
+========================= */
+@media (min-height: 850px) {
+
+    body {
+        align-items: center;
+    }
 }
 
-#passwordMessgeBar{
-  width: 0%;
-   height: 100%;
-   transition: width 0.1s ease;
-   font-size: x-small;
-   
-
-}
